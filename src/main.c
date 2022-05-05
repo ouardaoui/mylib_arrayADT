@@ -16,6 +16,7 @@ int main()
     arr.length = 0;
     while (select != 0)
     {
+        printf("----------------------------------------------------\n");
         printf("1- press 1 to add  \n");
         printf("2- press 2 to display  \n");
         printf("3- press 3 to insert  \n");
@@ -25,9 +26,7 @@ int main()
         printf("7- press 7 to get element\n");
         printf("8- press 8 to set element \n");
         printf("9- press 9 to get max\n");
-        printf("10- press 10 to get min\n ");
-        printf("11- press 11 to get sum\n ");
-        printf("12- press 12 to get average\n");
+        printf("10- press 10 to get min\n11- press11 to get sum\n12- press 12 to get average\n");
         printf("0 to exit\n");
         scanf("%d", &select);
         if (select == 1)
@@ -148,5 +147,7 @@ int main()
             printf("average is %d\n", x);
             printf("\n--------------------\n");
         }
+        if (select > 12 && select < 0)
+            break;
     }
 }
