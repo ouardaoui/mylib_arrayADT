@@ -22,7 +22,7 @@ clean :
 	rm -rf ${obj}  a.out 
 
 run : 
-	${cc} ${flags} src/main.c ${name} && ./a.out
+	${cc} ${flags} src/main.c ${name} 
 
 git : 
 	git commit -am "$m"
