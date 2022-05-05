@@ -22,6 +22,7 @@ int main()
         printf("4- press 4 for delete element \n");
         printf("5- press 5 for sort \n");
         printf("6- press 6 for search \n");
+        printf("7- press 7 to get element\n");
         printf("0 to exit\n");
         scanf("%d", &select);
         if (select == 1)
@@ -65,6 +66,16 @@ int main()
                 printf("element not exist\n");
             else
                 printf("index of element is %d\n", i);
+        }
+        if (select == 7)
+        {
+            printf("put index to get element\n");
+            scanf("%d", &i);
+            x = get(arr, i);
+            if (x == -404)
+                printf("put a valide index \n");
+            else
+                printf("element of index %d is : %d\n", i, x);
         }
     }
 }
