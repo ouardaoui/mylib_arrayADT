@@ -59,7 +59,7 @@ int main()
         if (select == 6)
         {
             printf("enter which element you lock for\n");
-            scanf("%d", x);
+            scanf("%d", &x);
             i = search(arr, x);
             printf("index of element is %d\n", i);
         }
