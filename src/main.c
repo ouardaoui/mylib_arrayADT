@@ -20,6 +20,8 @@ int main()
         printf("2- press 2 to display  \n");
         printf("3- press 3 to insert  \n");
         printf("4- press 4 for delete element \n");
+        printf("5- press 5 for sort \n");
+        printf("6- press 6 for search \n");
         printf("0 to exit\n");
         scanf("%d", &select);
         if (select == 1)
@@ -51,6 +53,15 @@ int main()
             scanf("%d", &i);
             x = delete (&arr, i);
             printf("removed element is : %d\n", x);
+        }
+        if (select == 5)
+            sort(&arr);
+        if (select == 6)
+        {
+            printf("enter which element you lock for\n");
+            scanf("%d", x);
+            i = search(arr, x);
+            printf("index of element is %d\n", i);
         }
     }
 }

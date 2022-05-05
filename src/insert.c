@@ -3,7 +3,7 @@
 void insert(Array *a, int x, int index)
 {
     int i;
-    if (index <= a->length)
+    if (index <= a->length && index >= 0)
         a->length++;
     i = a->length;
     {
