@@ -26,6 +26,8 @@ int main()
         printf("8- press 8 to set element \n");
         printf("9- press 9 to get max\n");
         printf("10- press 10 to get min\n ");
+        printf("11- press 11 to get sum\n ");
+        printf("12- press 12 to get average\n");
         printf("0 to exit\n");
         scanf("%d", &select);
         if (select == 1)
@@ -137,6 +139,13 @@ int main()
             x = sum(&arr);
             printf("--------------------\n");
             printf("sum is %d\n", x);
+            printf("\n--------------------\n");
+        }
+        if (select == 12)
+        {
+            x = avg(arr);
+            printf("--------------------\n");
+            printf("average is %d\n", x);
             printf("\n--------------------\n");
         }
     }

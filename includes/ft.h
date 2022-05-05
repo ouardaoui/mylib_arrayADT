@@ -19,4 +19,5 @@ int set(Array *a, int x, int index);
 int max(Array a);
 int min(Array a);
 int sum(Array *a);
+int avg(Array a);
 #endif
