@@ -14,3 +14,6 @@ ${biniary} : ${obj}
 	${cc}  ${flags} -c -o $@ $^
 clean : 
 	rm -rf ${obj}
+git : 
+	git commit -am "$m"
+	git push 
