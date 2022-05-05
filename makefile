@@ -1,7 +1,7 @@
 cc = gcc
 includes = -I ./includes 
 flags =  -Wall -Wextra -Werror ${includes} 
-src  = src/main.c  src/display.c src/append.c src/insert.c src/delete.c src/search.c src/sort.c src/get.c src/set.c src/max.c
+src  = src/main.c  src/display.c src/append.c src/insert.c src/delete.c src/search.c src/sort.c src/get.c src/set.c src/max.c src/min.c src/sum.c
 obj = ${src:.c=.o}
 biniary = bin
 

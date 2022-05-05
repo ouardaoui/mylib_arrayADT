@@ -25,6 +25,7 @@ int main()
         printf("7- press 7 to get element\n");
         printf("8- press 8 to set element \n");
         printf("9- press 9 to get max\n");
+        printf("10- press 10 to get min\n ");
         printf("0 to exit\n");
         scanf("%d", &select);
         if (select == 1)
@@ -122,6 +123,20 @@ int main()
             x = max(arr);
             printf("--------------------\n");
             printf("max is %d\n", x);
+            printf("\n--------------------\n");
+        }
+        if (select == 10)
+        {
+            x = min(arr);
+            printf("--------------------\n");
+            printf("max is %d\n", x);
+            printf("\n--------------------\n");
+        }
+        if (select == 11)
+        {
+            x = sum(&arr);
+            printf("--------------------\n");
+            printf("sum is %d\n", x);
             printf("\n--------------------\n");
         }
     }

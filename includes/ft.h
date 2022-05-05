@@ -17,4 +17,6 @@ int search(Array a, int x);
 int get(Array a, int index);
 int set(Array *a, int x, int index);
 int max(Array a);
+int min(Array a);
+int sum(Array *a);
 #endif
