@@ -15,5 +15,6 @@ void sort(Array *a);
 int delete (Array *a, int index);
 int search(Array a, int x);
 int get(Array a, int index);
+int set(Array *a, int x, int index);
 
 #endif

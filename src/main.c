@@ -23,6 +23,7 @@ int main()
         printf("5- press 5 for sort \n");
         printf("6- press 6 for search \n");
         printf("7- press 7 to get element\n");
+        printf("8- press 8 to set element \n");
         printf("0 to exit\n");
         scanf("%d", &select);
         if (select == 1)
@@ -53,7 +54,9 @@ int main()
             printf("enter index \n");
             scanf("%d", &i);
             x = delete (&arr, i);
+            printf("--------------------\n");
             printf("removed element is : %d\n", x);
+            printf("\n--------------------\n");
         }
         if (select == 5)
             sort(&arr);
@@ -63,9 +66,17 @@ int main()
             scanf("%d", &x);
             i = search(arr, x);
             if (i == -404)
+            {
+                printf("--------------------\n");
                 printf("element not exist\n");
+                printf("\n--------------------\n");
+            }
             else
+            {
+                printf("--------------------\n");
                 printf("index of element is %d\n", i);
+                printf("\n--------------------\n");
+            }
         }
         if (select == 7)
         {
@@ -73,9 +84,37 @@ int main()
             scanf("%d", &i);
             x = get(arr, i);
             if (x == -404)
+            {
+                printf("--------------------\n");
                 printf("put a valide index \n");
+                printf("\n--------------------\n");
+            }
             else
+            {
+                printf("--------------------\n");
                 printf("element of index %d is : %d\n", i, x);
+                printf("\n--------------------\n");
+            }
+        }
+        if (select == 8)
+        {
+            printf("enter  index \n");
+            scanf("%d", &i);
+            printf("enter element\n");
+            scanf("%d", &x);
+            x = set(&arr, x, i);
+            if (x == -404)
+            {
+                printf("--------------------\n");
+                printf("put a valid index \n");
+                printf("\n--------------------\n");
+            }
+            else
+            {
+                printf("--------------------\n");
+                printf("%d\n", x);
+                printf("\n--------------------\n");
+            }
         }
     }
 }
