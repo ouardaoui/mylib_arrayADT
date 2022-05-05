@@ -24,6 +24,7 @@ int main()
         printf("6- press 6 for search \n");
         printf("7- press 7 to get element\n");
         printf("8- press 8 to set element \n");
+        printf("9- press 9 to get max\n");
         printf("0 to exit\n");
         scanf("%d", &select);
         if (select == 1)
@@ -115,6 +116,13 @@ int main()
                 printf("%d\n", x);
                 printf("\n--------------------\n");
             }
+        }
+        if (select == 9)
+        {
+            x = max(arr);
+            printf("--------------------\n");
+            printf("max is %d\n", x);
+            printf("\n--------------------\n");
         }
     }
 }
