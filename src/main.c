@@ -19,6 +19,7 @@ int main()
         printf("1- press 1 to add  \n");
         printf("2- press 2 to display  \n");
         printf("3- press 3 to insert  \n");
+        printf("4- press 4 for delete element \n");
         printf("0 to exit\n");
         scanf("%d", &select);
         if (select == 1)
@@ -43,6 +44,13 @@ int main()
             printf("enter element\n");
             scanf("%d", &x);
             insert(&arr, x, i);
+        }
+        if (select == 4)
+        {
+            printf("enter index \n");
+            scanf("%d", &i);
+            x = delete (&arr, i);
+            printf("removed element is : %d\n", x);
         }
     }
 }

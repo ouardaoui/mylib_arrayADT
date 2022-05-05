@@ -11,5 +11,6 @@ typedef struct s_Array
 void append(Array *a, int x);
 void display(Array a);
 void insert(Array *a, int x, int index);
+int delete (Array *a, int index);
 
 #endif

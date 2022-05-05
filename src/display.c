@@ -8,5 +8,6 @@ void display(Array a)
     printf("--------------------\n");
     while (i < a.length)
         printf("%d ", a.A[i++]);
+    printf("\t length is %d", a.length);
     printf("\n--------------------\n");
 }
