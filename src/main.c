@@ -8,7 +8,7 @@ int main()
     int i, x, ele;
     select = -1;
     Array arr;
-    printf("enter size of your array : ");
+    printf("enter size of your array  (size must be integer): ");
     scanf("%d", &arr.size);
     arr.A = (int *)malloc(sizeof(int) * arr.size);
     if (!arr.A)
