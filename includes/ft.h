@@ -9,6 +9,9 @@ typedef struct s_Array
 } Array;
 
 void append(Array *a, int x);
+void reverse(Array *a);
+void left_shift(Array *a);
+void right_shift(Array *a);
 void display(Array a);
 void insert(Array *a, int x, int index);
 void sort(Array *a);

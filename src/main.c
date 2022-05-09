@@ -27,6 +27,9 @@ int main()
         printf("8- press 8 to set element \n");
         printf("9- press 9 to get max\n");
         printf("10- press 10 to get min\n11- press11 to get sum\n12- press 12 to get average\n");
+        printf("13- press 13 to  reverse\n");
+        printf("14- press 14 to left shift\n");
+        printf("15- press 15 to right shift\n");
         printf("0 to exit\n");
         scanf("%d", &select);
         if (select == 1)
@@ -147,7 +150,13 @@ int main()
             printf("average is %d\n", x);
             printf("\n--------------------\n");
         }
-        if (select > 12 && select < 0)
+        if (select == 13)
+            reverse(&arr);
+        if (select == 14)
+            left_shift(&arr);
+        if (select == 15)
+            right_shift(&arr);
+        if (select > 15 && select < 0)
             break;
     }
 }
