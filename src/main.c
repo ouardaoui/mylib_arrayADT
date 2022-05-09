@@ -30,6 +30,8 @@ int main()
         printf("13- press 13 to  reverse\n");
         printf("14- press 14 to left shift\n");
         printf("15- press 15 to right shift\n");
+        printf("16- press 16 to left rotation\n");
+        printf("17- press 17 to right rotation\n");
         printf("0 to exit\n");
         scanf("%d", &select);
         if (select == 1)
@@ -156,7 +158,11 @@ int main()
             left_shift(&arr);
         if (select == 15)
             right_shift(&arr);
-        if (select > 15 && select < 0)
+        if (select == 16)
+            left_rotate(&arr);
+        if (select == 17)
+            right_rotate(&arr);
+        if (select > 17 && select < 0)
             break;
     }
 }
